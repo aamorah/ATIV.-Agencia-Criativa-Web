@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,11 +21,11 @@
         <h1>Agência Criativa Web</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li class="nav__item--home"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item--about"><a class="nav__link" href="#about">Sobre Nós</a></li>
+                <li class="nav__item--services"><a class="nav__link" href="#services">Serviços</a></li>
+                <li class="nav__item--depoimentos"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item--contact"><a class="nav__link" href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -43,26 +44,26 @@
                 entregar resultados excepcionais para nossos clientes.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="services">
             <h2>Serviços</h2>
-            <ul>
-                <li>Desenvolvimento de Sites</li>
-                <li>Design Gráfico</li>
-                <li>Marketing Digital</li>
-                <li>SEO e Otimização de Conversão</li>
+            <ul class="services__list">
+                <li class="services__item">Desenvolvimento de Sites</li>
+                <li class="services__item">Design Gráfico</li>
+                <li class="services__item">Marketing Digital</li>
+                <li class="services__item">SEO e Otimização de Conversão</li>
             </ul>
         </section>
 
-        <section id="depoimentos">
+        <section id="depoimentos" class="testimonial">
             <h2>Depoimentos</h2>
-            <p>"A Agência Criativa Web transformou nosso site e aumentou nossas vendas!" - Cliente Satisfeito</p>
-            <p>"Profissionais dedicados e resultados incríveis. Recomendo!" - Outro Cliente Satisfeito</p>
+            <p class="testimonial__text">"A Agência Criativa Web transformou nosso site e aumentou nossas vendas!" - Cliente Satisfeito</p>
+            <p class="testimonial__text">"Profissionais dedicados e resultados incríveis. Recomendo!" - Outro Cliente Satisfeito</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact">
             <h2>Contato</h2>
             <p>Entre em contato conosco para discutir seu projeto e obter um orçamento personalizado.</p>
-            <ul>
+            <ul class="contact__list">
                 <li>Email: ficticio@agenciacriativaweb.com.br</li>
                 <li>Telefone: (11) 12345-9999</li>
             </ul>
