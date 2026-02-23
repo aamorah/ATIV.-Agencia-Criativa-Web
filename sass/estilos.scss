@@ -1,0 +1,20 @@
+// 1.Dividir o código Sass em múltiplos arquivos parciais, organizados por função ou componete
+// c. Utilizar operadores para calcular tamanhos proporcionais: ex. margin-bottom: calc($espacamento / 2).
+// 4. Aninhamento e organização:
+// a. Aplicar aninhamento de seletores com moderação, seguindo boas práticas.
+// b. Organizar os estilos por seções e componentes usando a metodologia BEM para nomeação das classes(.bloco__elemento--modificador).
+// 5. Compilação e estrutura de arquivos:
+// a. Compilar via linha de comando com Node.js.
+// b. O código final deve gerar um arquivo css final compilado.
+// c. O código sass deve estar na pasta scss/, separado do css/ compilado.
+
+
+
+
+@use 'variaveis' as *;
+@use 'base';
+@use 'mixins';
+@use 'layout';
+@use 'componentes';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');

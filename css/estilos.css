@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: "Google Sans", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+p {
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  color: #1e6d9e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #1e6d9e;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  background-color: #fff;
+}
+
+section {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 48px;
+  }
+}
+section h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 32px;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .menu {
+    gap: 32px;
+  }
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav__item--home,
+.nav__item--about,
+.nav__item--services,
+.nav__item--depoimentos,
+.nav__item--contact {
+  list-style: none;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 32px;
+  }
+}
+.card__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1e6d9e;
+}
+
+.btn {
+  background-color: #1e6d9e;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Google Sans", sans-serif;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn--primary {
+  background-color: #1e6d9e;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Google Sans", sans-serif;
+}
+.btn--secondary {
+  background-color: #118642;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Google Sans", sans-serif;
+}
+
+.services {
+  background-color: #f9f9f9;
+}
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .services__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.services__item {
+  background-color: #fff;
+  border: 2px solid #1e6d9e;
+  border-radius: 4px;
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial {
+  background-color: #1e6d9e;
+  color: #fff;
+}
+.testimonial__text {
+  font-size: 20px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 32px;
+  padding: 8px;
+  border-left: 4px solid #15c095;
+  padding-left: 16px;
+}
+
+.contact {
+  background-color: #f9f9f9;
+}
+.contact__list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  .contact__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+.contact__list li {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/*# sourceMappingURL=estilos.css.map */

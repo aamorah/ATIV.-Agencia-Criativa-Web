@@ -1,0 +1,38 @@
+// a. _base.scss: estilos base como body, tipografia, reset.
+
+@use 'variaveis' as *;
+
+body {
+    font-family: $font-family;
+    color: $dark-color;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-family-display;
+    margin: 0 0 $espacamento 0;
+    color: $dark-color;
+}
+
+p {
+    margin: 0 0 $espacamento 0;
+    line-height: 1.5;
+    font-size: $font-size-base;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}

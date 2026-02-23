@@ -1,0 +1,45 @@
+// b. Criar pelo menos dois mixins reutilizáveis: ex. espaçamento padrão, botão básico.
+// c. _mixins.scss: mixins reutilizáveis para media queries, botões, etc.
+
+@use 'variaveis' as *;
+
+@mixin botao($cor) {
+    background-color: $cor;
+    color: #fff;
+    padding: $espacamento;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-family: $font-family;
+}
+
+// Media Query Mixins - Mobile First Approach
+@mixin respond-sm {
+    @media (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin respond-md {
+    @media (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin respond-lg {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin respond-xl {
+    @media (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+// Mixin para espaçamento padrão
+@mixin espacamento-padrao {
+    margin-bottom: $espacamento;
+    padding: $espacamento;
+}

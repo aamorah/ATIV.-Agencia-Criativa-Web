@@ -1,0 +1,48 @@
+// d. _layout.scss: estrutura geral da página, como headers, footers, containers.
+
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.header {
+    background-color: $primary-color;
+    color: $white;
+    padding: $espacamento;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: $white;
+}
+
+section {
+    padding: $espacamento-lg;
+    margin-bottom: $espacamento-lg;
+
+    @include respond-md {
+        padding: $espacamento-xl;
+    }
+
+    h2 {
+        font-size: $font-size-xxl;
+        margin-bottom: $espacamento-lg;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $espacamento;
+
+    @include respond-md {
+        padding: calc($espacamento * 2);
+    }
+}
+
+.footer {
+    background-color: $dark-color;
+    color: $white;
+    padding: $espacamento;
+    text-align: center;
+    margin-top: $espacamento-xl;
+}
